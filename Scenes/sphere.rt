@@ -1,0 +1,55 @@
+# Scene de test 1
+#
+
+scene {
+	name { test1 }
+	camera {
+		origin { 0 0 -10 }
+		dir { 0 0 10 }
+	}
+	render { 900 720 }
+	object {
+		name { light 1 }
+		type { light }
+		origin {5 5 0}
+		color { 0xFFFFFF }
+	}
+	object {
+		name { light 2 }
+		type { light }
+		origin {10 5 0}
+		color { 0xFFFFFF }
+	}
+	object {
+		name { light 3 }
+		type { light }
+		origin {15 5 0}
+		color { 0xFFFFFF }
+	}
+	object {
+		name { sphere 1 }
+		type { sphere }
+		origin { 0 0 0 }
+		r1 {1}
+		mat {
+			ambient { 0.1 }
+			diffuse { 0.2 }
+			specular { 1 }
+			shine { 100 }
+		}
+		color { 0x6F04AF }
+	}
+	object {
+		name { sol }
+		type { plane }
+		origin { 0 -2 0 }
+		dir { 0 1 0 }
+		color { 0xFFFFF0 }
+		mat {
+			ambient { 0.1 }
+			diffuse { 0.2 }
+			specular { 1 }
+			shine { 100 }
+		}
+	}
+}
